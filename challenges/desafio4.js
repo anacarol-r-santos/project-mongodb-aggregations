@@ -13,7 +13,6 @@ db.movies.aggregate([
   {
     $match: {
       title_split: { $size: 1 },
-    },                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    },
   },
 ]).pretty();
-
