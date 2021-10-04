@@ -3,7 +3,7 @@ db.movies.aggregate([
     $match: {
       cast: {
         $exists: true,
-          $in: [
+        $in: [
           "Sandra Bullock",
           "Tom Hanks",
           "Julia Roberts",
