@@ -5,9 +5,6 @@ db.movies.aggregate([
     },
   },
   {
-    $unwind: "$imdb",
-  },
-  {
     $group: {
       _id: null,
       maior_rating: { $max: "$imdb.rating" },
