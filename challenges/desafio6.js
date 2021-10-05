@@ -1,7 +1,12 @@
 db.movies.aggregate([
   {
     $match: {
-      awards: { $regex: /won .* Oscar/i },
+      awards: { $regex: /won/i },
+    },
+  },
+  {
+    $match: {
+      awards: { $regex: /oscar/i },
     },
   },
   {
